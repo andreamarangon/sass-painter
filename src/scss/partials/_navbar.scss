@@ -1,0 +1,21 @@
+.navbar {
+  background-color: #101010;
+  height: 95px;
+  .container-nav-up {
+    @include container-center(60%);
+    height: 50%;
+    display: flex;
+    justify-content: flex-end;
+    ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      li {
+        padding-left: 20px;
+        i {
+          color: $blue;
+        }
+      }
+    }
+  }
+}
