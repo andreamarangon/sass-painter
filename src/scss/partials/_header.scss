@@ -13,7 +13,8 @@ header {
       display: flex;
       align-items: center;
       .jumbo-contain {
-        height: 300px;;
+        height: 300px;
+        width: 550px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -22,12 +23,21 @@ header {
             width: 250px;
           }
         }
+        .jumbo-title {
+          font-size: 22px;
+        }
+        .jumbo-subtitle {
+          color: #C70EB8;
+          font-size: 17px;
+          font-style: italic;
+        }
         .jumbo-container-btn {
           display: flex;
           justify-content: flex-start;
           .btn-jumbo {
             padding: 9px 30px;
             font-size: 20px;
+            cursor: pointer;
             &.btn-jumbo-left {
               background-color: #000;
               color: $primary;
