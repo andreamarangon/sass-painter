@@ -12,8 +12,36 @@
       align-items: center;
       li {
         padding-left: 20px;
+        font-size: 13px;
         i {
           color: $blue;
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+  .container-nav-down {
+    @include container-center(60%);
+    display: flex;
+    .logo-painter-white {
+      img {
+        width: 90px;
+      }
+    }
+    ul {
+      list-style: none;
+      display: flex;
+      align-items: flex-end;
+      li {
+        padding-left: 30px;
+        display: inline-block;
+        a {
+          color: $primary;
+          text-decoration: none;
+          i {
+            font-size: 10px;
+            color: $secondary;
+          }
         }
       }
     }

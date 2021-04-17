@@ -1,5 +1,45 @@
 @import '_navbar.scss';
 
 header {
-  height: 100px;
+  .jumbo {
+    // background-image: url('../img/bg-painter-home.jpg');
+    height: 480px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    .jumbo-container {
+      @include container-center(60%);
+      height: 100%;
+      display: flex;
+      align-items: center;
+      .jumbo-contain {
+        height: 300px;;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .logo-painter-black {
+          img {
+            width: 250px;
+          }
+        }
+        .jumbo-container-btn {
+          display: flex;
+          justify-content: flex-start;
+          .btn-jumbo {
+            padding: 9px 30px;
+            font-size: 20px;
+            &.btn-jumbo-left {
+              background-color: #000;
+              color: $primary;
+            }
+            &.btn-jumbo-right {
+              border: 2px solid #000;
+              margin-left: 25px;
+            }
+          }
+        }
+
+      }
+    }
+  }
 }
