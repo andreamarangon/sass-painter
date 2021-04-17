@@ -1,0 +1,27 @@
+main {
+  background-color: #E8E8E8;
+  section {
+    @include container-center(60%);
+    &.possibilities {
+      .card-possibilities-container {
+        @include clearfix;
+        .card-possibilities {
+          background-color: $primary;
+          width: calc(100% / 3 );
+          float: left;
+          .card-possibilities-img {
+            img {
+              width: 100%;
+            }
+          }
+          .card-possibilities-text {
+            padding: 20px;
+            & > * {
+              margin-bottom: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
