@@ -18,6 +18,26 @@ body {
   color: #A3A3A3;
 }
 
+.text-darkgray {
+  color: #333333;
+}
+
+.text-blue {
+  color: #009CFF;
+}
+
+.bg-purple {
+  background-color: #3C1567;
+}
+
+.bg-gray {
+  background-color: #3C3C3C;
+}
+
+.bg-blue {
+  background-color: #0072BC;
+}
+
 .mt-1 {
   margin-top: 1em;
 }
@@ -28,6 +48,10 @@ body {
 
 .mt-3 {
   margin-top: 1.5em;
+}
+
+.mt-4 {
+  margin-top: 5em;
 }
 
 .mb-1 {
@@ -42,7 +66,27 @@ body {
   margin-bottom: 2em;
 }
 
+.pt-1 {
+  padding-top: 1em;
+}
+
+.pt-2 {
+  padding-top: 1.25em;
+}
+
+.pt-3 {
+  padding-top: 1.5em;
+}
+
 .pb-1 {
+  padding-bottom: 1em;
+}
+
+.pb-2 {
+  padding-bottom: 1em;
+}
+
+.pb-3 {
   padding-bottom: 1em;
 }
 
@@ -60,6 +104,10 @@ body {
 
 .text-center {
   text-align: center;
+}
+
+.text-italic {
+  font-style: italic;
 }
 
 .navbar {
@@ -165,18 +213,23 @@ main {
   background-color: #E8E8E8;
 }
 main section {
-  width: 60%;
+  width: 61%;
   margin: 0 auto;
 }
+main section.possibilities h1 {
+  font-weight: normal;
+  font-size: 30px;
+}
 main section.possibilities .card-possibilities-container {
-  clear: both;
-  content: "";
-  display: table;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -15px;
 }
 main section.possibilities .card-possibilities-container .card-possibilities {
   background-color: #fff;
-  width: calc(100% / 3 );
-  float: left;
+  width: calc(100% / 3 -30px);
+  margin-right: 15px;
+  margin-left: 15px;
 }
 main section.possibilities .card-possibilities-container .card-possibilities .card-possibilities-img img {
   width: 100%;
@@ -186,4 +239,37 @@ main section.possibilities .card-possibilities-container .card-possibilities .ca
 }
 main section.possibilities .card-possibilities-container .card-possibilities .card-possibilities-text > * {
   margin-bottom: 20px;
+}
+main section.card-big-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+main section.card-big-container .card-small {
+  width: calc(100% / 2);
+  height: 350px;
+}
+main section.card-big-container .card-small.card-small-text {
+  padding: 60px 50px;
+  color: #fff;
+}
+main section.card-big-container .card-small.card-small-text > * {
+  margin-bottom: 25px;
+}
+main section.card-big-container .card-small.card-small-text p {
+  font-size: 20px;
+  font-weight: lighter;
+}
+main section.card-big-container .card-small.card-small-text h1 {
+  font-weight: normal;
+}
+main section.card-big-container .card-small.card-small-text .btn-card-small {
+  background-color: #fff;
+  padding: 9px 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #000;
+}
+main section.card-big-container .card-small.card-small-img {
+  background-repeat: no-repeat;
+  background-size: cover;
 }

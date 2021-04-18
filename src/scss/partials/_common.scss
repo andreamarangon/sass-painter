@@ -8,6 +8,27 @@
   color: #A3A3A3;
 }
 
+.text-darkgray {
+  color: #333333;
+}
+
+.text-blue {
+  color: #009CFF;
+}
+
+// background-color
+.bg-purple {
+  background-color: #3C1567;
+}
+
+.bg-gray {
+  background-color: #3C3C3C;
+}
+
+.bg-blue {
+  background-color: #0072BC;
+}
+
 // margin and padding
 .mt-1 {
   margin-top: 1em;
@@ -19,6 +40,10 @@
 
 .mt-3 {
   margin-top: 1.5em;
+}
+
+.mt-4 {
+  margin-top: 5em;
 }
 
 .mb-1 {
@@ -33,7 +58,27 @@
   margin-bottom: 2em;
 }
 
+.pt-1 {
+  padding-top: 1em;
+}
+
+.pt-2 {
+  padding-top: 1.25em;
+}
+
+.pt-3 {
+  padding-top: 1.5em;
+}
+
 .pb-1 {
+  padding-bottom: 1em;
+}
+
+.pb-2 {
+  padding-bottom: 1em;
+}
+
+.pb-3 {
   padding-bottom: 1em;
 }
 
@@ -53,4 +98,8 @@
 
 .text-center {
   text-align: center;
+}
+
+.text-italic {
+  font-style: italic;
 }
