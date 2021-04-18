@@ -78,6 +78,14 @@ body {
   padding-top: 1.5em;
 }
 
+.pt-4 {
+  padding-top: 2em;
+}
+
+.pt-5 {
+  padding-top: 3.5em;
+}
+
 .pb-1 {
   padding-bottom: 1em;
 }
@@ -246,7 +254,12 @@ main section.card-big-container {
 }
 main section.card-big-container .card-small {
   width: calc(100% / 2);
-  height: 350px;
+  height: 325px;
+}
+main section.card-big-container .card-small img {
+  width: 80%;
+  padding-top: 20px;
+  padding-left: 15px;
 }
 main section.card-big-container .card-small.card-small-text {
   padding: 60px 50px;
@@ -272,4 +285,47 @@ main section.card-big-container .card-small.card-small-text .btn-card-small {
 main section.card-big-container .card-small.card-small-img {
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+footer section.footer-up {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+}
+footer section.footer-up ul {
+  width: calc(100% / 4);
+  list-style: none;
+}
+footer section.footer-up ul li {
+  padding-bottom: 5px;
+}
+footer section.footer-up ul li a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 12px;
+}
+footer section.footer-down {
+  height: 90px;
+  background-color: #1E1E1E;
+}
+footer section.footer-down .footer-down-container {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+footer section.footer-down .footer-down-container .footer-down-container-left {
+  display: flex;
+}
+footer section.footer-down .footer-down-container .footer-down-container-left div {
+  margin-left: 20px;
+}
+footer section.footer-down .footer-down-container .footer-down-container-right ul li {
+  display: inline-block;
+  font-size: 12px;
+  margin-right: 20px;
+}
+footer section.footer-down .footer-down-container .footer-down-container-right ul li a {
+  text-decoration: none;
+  color: #A3A3A3;
 }
