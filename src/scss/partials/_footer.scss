@@ -16,6 +16,45 @@ footer {
         }
       }
     }
+    &.footer-center {
+      @include container-center(60%);
+      display: flex;
+      justify-content: flex-end;
+      .logo-social-container {
+        width: calc(100% / 4);
+        margin: 30px 0;
+        display: flex;
+        div {
+          height: 32px;
+          width: 32px;
+          margin-right: 9px;
+          color: $primary;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 20px;
+          &.logo-insta {
+            background-color: #E4405F;
+            font-size: 25px;
+          }
+          &.logo-fb {
+            background-color: #3B5998;
+          }
+          &.logo-twitter {
+            background-color: #1DA1F2;
+          }
+          &.logo-yt {
+            background-color: #CD201F;
+          }
+          &.logo-pinterest {
+            background-color: #BD081C;
+          }
+          &.logo-wifi {
+            background-color: #FF8D00;
+          }
+        }
+      }
+    }
     &.footer-down {
       height: 90px;
       background-color: #1E1E1E;
